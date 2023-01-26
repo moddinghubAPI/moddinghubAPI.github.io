@@ -24,6 +24,28 @@ top: 40%;
         -moz-box-shadow: none;
         box-shadow: none;
       }
+      #alltext2{
+
+        box-sizing: border-box;
+        border: 2px solid #00FFFF;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        position: absolute;
+        resize: none;
+        color: cyan;
+        top: 10%;
+        overflow: hidden;
+        background-color: black; 
+        outline: none;
+        width: 300pt;
+        height: 20pt; 
+left:32%;
+top: 45%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
       .button {
   background-color: #00FFFF; /* Cyan*/
   border: none;
