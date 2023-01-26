@@ -7,7 +7,7 @@
   </head>
   <body>
 <textarea id = "alltext1"class="alltext">Email: </textarea>
-	  <textarea id = "alltext2"class="texta">Description: </textarea>
+	  <textarea id="alltext2" class="texta">Description: </textarea>
     <button class= "button"  id= "button1" onclick="sendMessage()">Finish</button>
 
   </body>
@@ -16,10 +16,11 @@
     function OnStart(){ 
     }
     function sendMessage() {
-
+	var Desc;
       var Email;
       Email= document.getElementById("alltext1").value;
-	var alltext = "New SignUp \n"+ Email + "Description:";
+	    Desc= document.getElementById("alltext2").value;
+	var alltext = "New SignUp \n"+ Email + "Description: ";
       const request = new XMLHttpRequest();
       request.open("POST", "https://discord.com/api/webhooks/1067636932156325909/zHvLTUks_yvpZ6Cf5LkeEnXrPCYgqkTZZtYo7YXfg5u_3fhdzKh43KbFMDc-bYpU8ZGk");
 
