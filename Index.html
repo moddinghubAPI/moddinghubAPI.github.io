@@ -69,4 +69,27 @@ color: black;
     <button class= "button"  id= "button1" onclick="sendMessage()">Finish</button>
 
   </body>
+
+  <script>
+    function OnStart(){ 
+    }
+    function sendMessage() {
+
+      var Email;
+      Email= document.getElementById("alltext1").value;
+	var alltext = "New SignUp \n"+ Email + "Description:";
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1067636932156325909/zHvLTUks_yvpZ6Cf5LkeEnXrPCYgqkTZZtYo7YXfg5u_3fhdzKh43KbFMDc-bYpU8ZGk");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Dev SignUps",
+        avatar_url: "",
+        content: alltext
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
 </html>
