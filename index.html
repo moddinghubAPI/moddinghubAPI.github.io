@@ -13,8 +13,19 @@
 
   </body>
 
-  <script>
-    function OnStart(){ 
+  <script> 
+	  window.onload = function() {
+ 	  OnStart();
+	  };
+   function OnStart(){ 
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        document.getElementById("alltext1").style.visibility="hidden";
+        document.getElementById("alltext2").style.visibility="hidden";
+        document.getElementById("alltext3").style.visibility="hidden";
+        document.getElementById("button").style.visibility="hidden";
+      }else{
+        console.log("mobile check:off");
+      }
     }
     function sendMessage() {
 	var Desc;
