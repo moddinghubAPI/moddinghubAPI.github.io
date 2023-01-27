@@ -9,7 +9,7 @@
 <textarea id = "alltext1"class="alltext">Email: </textarea>
 	  <textarea id="alltext2" class="texta">Description: </textarea>
 	  <textarea id="alltext3" class="textb">Download Link: </textarea>
-    <button class= "button"  id= "button1" onclick="sendMessage()">Finish</button>
+    <button class= "button"  id="button1" onclick="sendMessage()">Finish</button>
 
   </body>
 
@@ -23,6 +23,7 @@
         document.getElementById("alltext2").style.visibility="hidden";
         document.getElementById("alltext3").style.visibility="hidden";
         document.getElementById("button1").style.visibility="hidden";
+	      document.getElementByClass("button").style.visibility="hidden";
 	      document.write("this site does not support mobile");
 	      console.log("This site does not support mobile");
       }else{
