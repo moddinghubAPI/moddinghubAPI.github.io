@@ -10,6 +10,7 @@
 	  <textarea id="alltext2" class="texta">Description: </textarea>
 	  <textarea id="alltext3" class="textb">Download Link: </textarea>
     <button class= "button"  id="button1" onclick="sendMessage()">Finish</button>
+<p1 id="NoBile">This site does not support mobile</p1>
 
   </body>
 
@@ -24,7 +25,7 @@
         document.getElementById("alltext3").style.visibility="hidden";
         document.getElementById("button1").style.visibility="hidden";
 	      document.getElementByClass("button").style.visibility="hidden";
-	      document.write("this site does not support mobile");
+	      document.getElementByClass("NoBile").style.visibility="visable";
 	      console.log("This site does not support mobile");
       }else{
         console.log("mobile check:off");
