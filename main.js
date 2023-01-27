@@ -5,7 +5,6 @@
         document.getElementById("alltext2").style.visibility="hidden";
         document.getElementById("alltext3").style.visibility="hidden";
         document.getElementById("button1").style.visibility="hidden";
-	      document.getElementByClass("button").style.visibility="hidden";
 	      document.getElementById("NoBile").style.visibility="visable";
 	      console.log("This site does not support mobile");
       }else{
