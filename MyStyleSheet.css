@@ -1,7 +1,9 @@
       body{
              background-color: black; 
       }
-
+      #NoBile{
+      visability: hidden;
+      }
       #alltext1{
 
         box-sizing: border-box;
