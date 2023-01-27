@@ -45,6 +45,27 @@ top: 45%;
         -moz-box-shadow: none;
         box-shadow: none;
       }
+      #alltext3{
+
+        box-sizing: border-box;
+        border: 2px solid #00FFFF;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        position: absolute;
+        resize: none;
+        color: cyan;
+        overflow: hidden;
+        background-color: black; 
+        outline: none;
+        width: 300pt;
+        height: 20pt; 
+left:32%;
+top: 50%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
       .button {
   background-color: #00FFFF; /* Cyan*/
   border: none;
