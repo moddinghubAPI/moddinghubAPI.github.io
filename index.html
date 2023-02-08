@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-<textarea id = "alltext1"class="alltext">UserName: </textarea>
-	  <textarea id="alltext2" class="texta">Why do you want to be a tester?: </textarea>
-	  <textarea id="alltext3" class="textb">will you keep all mods private?: </textarea>
-    <button class= "button"  id="button1" onclick="sendMessage()">Finish</button>
+<textarea id = "alltext1"class="alltext"></textarea>
+    <button class= "button"  id="button1" onclick="sendMessage()">Send</button>
 <p1 id="NoBile">This site does not support mobile</p1>
 
   </body>
@@ -33,22 +31,17 @@
       }
     }
     function sendMessage() {
-	var Desc;
-      var Email;
-	    var Link;
-      Email= document.getElementById("alltext1").value;
-	    Desc= document.getElementById("alltext2").value;
-	    Link= document.getElementById("alltext3").value;
-	var alltext = "New SignUp \n"+ Email+"\n"+Desc+"\n"+Link;
+      var Uhh;
+      Uhh= document.getElementById("alltext1").value;
       const request = new XMLHttpRequest();
       request.open("POST", "https://discord.com/api/webhooks/"+"1068342423090118796/RXIasmpKi-zKIwp35v8QFQUrgmux5JpQ1k6_KN-7N223qWhnpFV4_h0Of03cnWgRcVLm");
 
       request.setRequestHeader('Content-type', 'application/json');
 
       const params = {
-        username: "Dev SignUps",
+        username: "UserName",
         avatar_url: "",
-        content: alltext
+        content: Uhh
       }
 
       request.send(JSON.stringify(params));
